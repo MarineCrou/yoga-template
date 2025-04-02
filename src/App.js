@@ -25,44 +25,44 @@ import {
 } from "@heroicons/react/20/solid";
 
 const navigation = [
-  { name: "Product", href: "/produc" },
-  { name: "Features", href: "/features" },
+  { name: "about", href: "/about" },
+  { name: "yoga", href: "/features" },
   { name: "Marketplace", href: "/marketplace" },
   { name: "Company", href: "/company" },
 ];
 const features = [
   {
-    name: "Push to deploy.",
+    name: `"No" is a complete sentence`,
     description:
       "Lorem ipsum, dolor sit amet consectetur adipisicing elit aute id magna.",
     icon: CloudArrowUpIcon,
   },
   {
-    name: "SSL certificates.",
+    name: "A trauma-informed approach",
     description:
       "Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo.",
     icon: LockClosedIcon,
   },
   {
-    name: "Simple queues.",
+    name: "200h Yoga Teacher Training",
     description:
       "Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus.",
     icon: ArrowPathIcon,
   },
   {
-    name: "Advanced security.",
+    name: "Find what's right for you",
     description:
       "Lorem ipsum, dolor sit amet consectetur adipisicing elit aute id magna.",
     icon: FingerPrintIcon,
   },
   {
-    name: "Powerful API.",
+    name: "Hatha or Vinasa practices",
     description:
       "Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo.",
     icon: Cog6ToothIcon,
   },
   {
-    name: "Database backups.",
+    name: "Breathwork to sooth the mind",
     description:
       "Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. ",
     icon: ServerIcon,
@@ -70,22 +70,16 @@ const features = [
 ];
 const tiers = [
   {
-    name: "Hobby",
+    name: "A la Carte",
     id: "tier-hobby",
     href: "/",
     priceMonthly: "$19",
-    description:
-      "The perfect plan if you're just getting started with our product.",
-    features: [
-      "25 products",
-      "Up to 10,000 subscribers",
-      "Advanced analytics",
-      "24-hour support response time",
-    ],
+    description: "The perfect plan if you're looking for flexibility.",
+    features: ["4 yoga classes", "Available for 6 months", "Use whenever"],
     featured: false,
   },
   {
-    name: "Enterprise",
+    name: "Monthly Subscription",
     id: "tier-enterprise",
     href: "/",
     priceMonthly: "$49",
@@ -143,7 +137,7 @@ export default function App() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
-    <div className="bg-white">
+    <div className="bg-orange-50">
       {/* Header */}
       <header className="absolute inset-x-0 top-0 z-50">
         <nav
@@ -199,7 +193,7 @@ export default function App() {
                 <span className="sr-only">Your Company</span>
                 <img
                   alt=""
-                  src="https://tailwindcss.com/plus-assets/img/logos/mark.svg?color=indigo&shade=500"
+                  src="https://tailwindcss.com/plus-assets/img/logos/mark.svg?color=orange&shade=500"
                   className="h-8 w-auto"
                 />
               </a>
@@ -272,17 +266,17 @@ export default function App() {
               </div>
               <div className="text-center">
                 <h1 className="text-5xl font-semibold tracking-tight text-balance text-white sm:text-7xl">
-                  Yoga that feels good for you
+                  Yoga that feels good to you
                 </h1>
                 <p className="mt-8 text-lg font-medium text-pretty text-gray-400 sm:text-xl/8">
-                  Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure
-                  qui lorem cupidatat commodo. Elit sunt amet fugiat veniam
-                  occaecat.
+                  Yoga gives us a path to shift our perspective, helping us see
+                  life as something that supports us and helping us access our
+                  true self.
                 </p>
                 <div className="mt-10 flex items-center justify-center gap-x-6">
                   <a
                     href="/"
-                    className="rounded-md bg-orange-700 px-3.5 py-2.5 text-sm font-semibold text-white shadow-xs hover:bg-indigo-400 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-400"
+                    className="rounded-md bg-orange-700 px-3.5 py-2.5 text-sm font-semibold text-white shadow-xs hover:bg-orange-400 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-orange-400"
                   >
                     Learn more
                   </a>
@@ -350,11 +344,11 @@ export default function App() {
         <div className="mt-32 sm:mt-56">
           <div className="mx-auto max-w-7xl px-6 lg:px-8">
             <div className="mx-auto max-w-2xl sm:text-center">
-              <h2 className="text-base/7 font-semibold text-indigo-600">
+              <h2 className="text-base/7 font-semibold text-orange-600">
                 Everything you need
               </h2>
               <p className="mt-2 text-4xl font-semibold tracking-tight text-pretty text-gray-900 sm:text-5xl sm:text-balance">
-                No server? No problem.
+                A holistic approach: mind & body
               </p>
               <p className="mt-6 text-lg/8 text-gray-600">
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit.
@@ -367,7 +361,7 @@ export default function App() {
             <div className="mx-auto max-w-7xl px-6 lg:px-8">
               <img
                 alt="App screenshot"
-                src="https://tailwindcss.com/plus-assets/img/component-images/project-app-screenshot.png"
+                src="https://plus.unsplash.com/premium_photo-1661777196224-bfda51e61cfd?q=80&w=3270&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                 width={2432}
                 height={1442}
                 className="mb-[-12%] rounded-xl ring-1 shadow-2xl ring-gray-900/10"
@@ -384,9 +378,9 @@ export default function App() {
                   <dt className="inline font-semibold text-gray-900">
                     <feature.icon
                       aria-hidden="true"
-                      className="absolute top-1 left-1 size-5 text-indigo-600"
+                      className="absolute top-1 left-1 size-5 text-orange-600"
                     />
-                    {feature.name}
+                    <span className="text-orange-600">{feature.name}</span>
                   </dt>{" "}
                   <dd className="inline">{feature.description}</dd>
                 </div>
@@ -396,7 +390,7 @@ export default function App() {
         </div>
 
         {/* Testimonial section */}
-        <div className="relative z-10 mt-32 bg-gray-900 pb-20 sm:mt-56 sm:pb-24 xl:pb-0">
+        <div className="relative z-10 mt-32 bg-orange-900 pb-20 sm:mt-56 sm:pb-24 xl:pb-0">
           <div aria-hidden="true" className="absolute inset-0 overflow-hidden">
             <div className="absolute top-[calc(50%-36rem)] left-[calc(50%-19rem)] transform-gpu blur-3xl">
               <div
@@ -413,8 +407,8 @@ export default function App() {
               <div className="relative aspect-2/1 h-full md:-mx-8 xl:mx-0 xl:aspect-auto">
                 <img
                   alt=""
-                  src="https://images.unsplash.com/photo-1517841905240-472988babdf9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2102&q=80"
-                  className="absolute inset-0 size-full rounded-2xl bg-gray-800 object-cover shadow-2xl"
+                  src="https://media.istockphoto.com/id/1354213603/fr/photo/femme-%C3%A2g%C3%A9e-faisant-de-lentra%C3%AEnement-%C3%A0-domicile.jpg?s=1024x1024&w=is&k=20&c=voCTjK-9DeMcD13eKv0cvA1mhBA-C44o_Am-n34gWs8="
+                  className="absolute inset-0 size-full rounded-2xl bg-orange-900 object-cover shadow-2xl"
                 />
               </div>
             </div>
@@ -441,8 +435,10 @@ export default function App() {
                   </p>
                 </blockquote>
                 <figcaption className="mt-8 text-base">
-                  <div className="font-semibold text-white">Judith Black</div>
-                  <div className="mt-1 text-gray-400">CEO of Tuple</div>
+                  <div className="font-semibold text-white">Maria Stones</div>
+                  <div className="mt-1 text-gray-400">
+                    Meet your yoga teacher
+                  </div>
                 </figcaption>
               </figure>
             </div>
@@ -450,7 +446,7 @@ export default function App() {
         </div>
 
         {/* Pricing section */}
-        <div className="relative isolate mt-32 bg-white px-6 sm:mt-56 lg:px-8">
+        <div className="relative isolate mt-32  px-6 sm:mt-56 lg:px-8">
           <div
             aria-hidden="true"
             className="absolute inset-x-0 -top-3 -z-10 transform-gpu overflow-hidden px-36 blur-3xl"
@@ -464,16 +460,15 @@ export default function App() {
             />
           </div>
           <div className="mx-auto max-w-2xl sm:text-center">
-            <h2 className="text-base/7 font-semibold text-indigo-600">
+            <h2 className="text-base/7 font-semibold text-orange-600">
               Pricing
             </h2>
             <p className="mt-2 text-4xl font-semibold tracking-tight text-pretty text-gray-900 sm:text-5xl sm:text-balance">
               Choose the right plan for you
             </p>
             <p className="mt-6 text-lg/8 text-gray-600">
-              Choose an affordable plan that’s packed with the best features for
-              engaging your audience, creating customer loyalty, and driving
-              sales.
+              Gravida quam mi erat tortor neque molestie. Auctor aliquet at
+              porttitor a enim nunc suscipit tincidunt nunc.
             </p>
           </div>
           <div className="mx-auto mt-16 grid max-w-lg grid-cols-1 items-center gap-y-6 sm:mt-20 sm:gap-y-0 lg:max-w-4xl lg:grid-cols-2">
@@ -482,7 +477,7 @@ export default function App() {
                 key={tier.id}
                 className={classNames(
                   tier.featured
-                    ? "relative bg-gray-900 shadow-2xl"
+                    ? "relative bg-orange-900 shadow-2xl"
                     : "bg-white/60 sm:mx-8 lg:mx-0",
                   tier.featured
                     ? ""
@@ -495,7 +490,7 @@ export default function App() {
                 <h3
                   id={tier.id}
                   className={classNames(
-                    tier.featured ? "text-indigo-400" : "text-indigo-600",
+                    tier.featured ? "text-orange-400" : "text-orange-600",
                     "text-base/7 font-semibold"
                   )}
                 >
@@ -538,7 +533,7 @@ export default function App() {
                       <CheckIcon
                         aria-hidden="true"
                         className={classNames(
-                          tier.featured ? "text-indigo-400" : "text-indigo-600",
+                          tier.featured ? "text-orange-400" : "text-orange-600",
                           "h-6 w-5 flex-none"
                         )}
                       />
@@ -551,8 +546,8 @@ export default function App() {
                   aria-describedby={tier.id}
                   className={classNames(
                     tier.featured
-                      ? "bg-indigo-500 text-white shadow-xs hover:bg-indigo-400 focus-visible:outline-indigo-500"
-                      : "text-indigo-600 ring-1 ring-indigo-200 ring-inset hover:ring-indigo-300 focus-visible:outline-indigo-600",
+                      ? "bg-orange-500 text-white shadow-xs hover:bg-orange-400 focus-visible:outline-orange-500"
+                      : "text-orange-600 ring-1 ring-orange-200 ring-inset hover:ring-orange-300 focus-visible:outline-orange-600",
                     "mt-8 block rounded-md px-3.5 py-2.5 text-center text-sm font-semibold focus-visible:outline-2 focus-visible:outline-offset-2 sm:mt-10"
                   )}
                 >
@@ -609,7 +604,7 @@ export default function App() {
           <div className="xl:grid xl:grid-cols-3 xl:gap-8">
             <img
               alt="Company name"
-              src="https://tailwindcss.com/plus-assets/img/logos/mark.svg?color=indigo&shade=500"
+              src="https://tailwindcss.com/plus-assets/img/logos/mark.svg?color=orange&shade=500"
               className="h-9"
             />
             <div className="mt-16 grid grid-cols-2 gap-8 xl:col-span-2 xl:mt-0">
